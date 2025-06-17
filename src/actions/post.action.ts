@@ -117,7 +117,7 @@ export async function toggleLike(postId: string) {
           ? [
               prisma.notifications.create({
                 data: {
-                  type: "LIke",
+                  type: "LIKE",
                   userId: post.authorId, // recipient (post author)
                   creatorId: userId, // person who liked
                   postId,

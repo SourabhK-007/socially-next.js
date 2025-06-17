@@ -83,14 +83,14 @@ function NotificationPage() {
                         </span>{" "}
                         {notification.type === "FOLLOW"
                           ? "started following you"
-                          : notification.type === "LIke"
+                          : notification.type === "LIKE"
                           ? "liked your post"
                           : "commented on your post"}
                       </span>
                     </div>
 
                     {notification.post &&
-                      (notification.type==="LIke"|| notification.type === "COMMENT") && (
+                      (notification.type==="LIKE"|| notification.type === "COMMENT") && (
                         <div className="pl-6 space-y-2">
                           <div className="text-sm text-muted-foreground rounded-md p-2 bg-muted/30 mt-2">
                             <p>{notification.post.content}</p>
