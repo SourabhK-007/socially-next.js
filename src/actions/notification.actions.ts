@@ -3,7 +3,7 @@
 import { prisma } from "@/lib/prisma";
 import { getDbUserId } from "./user.actions";
 
-export async function getNotifications() {
+export async function   getNotifications() {
     try {
         const userId = await getDbUserId();
         if (!userId) return [];
