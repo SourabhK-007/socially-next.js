@@ -23,7 +23,7 @@ export async function getProfileByUsername(username: string) {
         createdAt: true,
         _count: {
           select: {
-            follwers: true,
+            Follows: true,
             following: true,
             posts: true,
           },

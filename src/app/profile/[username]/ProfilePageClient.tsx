@@ -101,10 +101,10 @@ function ProfilePageClient({ isFollowing: initialIsFollowing, likedPosts, posts,
                       <div className="text-sm text-muted-foreground">Following</div>
                     </div>
                     <Separator orientation="vertical" />
-                    <div>
+                    {/* <div>
                       <div className="font-semibold">{user._count.follwers.toLocaleString()}</div>
-                      <div className="text-sm text-muted-foreground">Followers</div>
-                    </div>
+                      <div className="text-sm text-muted-foreground">follwers</div>
+                    </div> */}
                     <Separator orientation="vertical" />
                     <div>
                       <div className="font-semibold">{user._count.posts.toLocaleString()}</div>
